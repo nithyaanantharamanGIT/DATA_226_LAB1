@@ -1,0 +1,5 @@
+Stock Price Data Pipeline & Forecasting – Airflow | Snowflake | yfinance
+
+Tech Stack: Airflow, Python, yfinance, Snowflake, SQL, Snowflake ML, Pandas
+
+Engineered an end-to-end automated data pipeline orchestrated in Apache Airflow, integrating data ingestion, transformation, and forecasting for stock price analytics. Developed a yfinance-based ETL workflow to extract OHLCV stock data, clean and structure it with Pandas, and perform upserts into Snowflake using SQL MERGE operations for idempotent loads. Implemented a Snowflake ML Forecasting pipeline that trained time-series models on 180-day rolling windows and generated future price predictions. Combined ETL and ML outputs into a final unified table using transactional SQL (BEGIN / COMMIT / ROLLBACK) to ensure data consistency and atomicity. Configured Airflow Connections and Variables for secure parameterization (Snowflake credentials, warehouse, symbols, forecast horizon). Delivered a production-ready architecture supporting scalability, reproducibility, and downstream integration with BI tools (Tableau, Superset).
